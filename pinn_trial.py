@@ -31,7 +31,7 @@ from formulations.eqns_o1_inverse import Data_Equations, Inverse_1stOrder_Equati
 """Define the domain of the problem"""
 
 #Import ground truth data for u,h and their x-positions (x) from which to build synthetic noisy training data
-data = loadmat('/home/yiwasaki/IceShelf1D/reproduction_data/constant_ground_truth_on_cluster_Adam10000LBFGS75000Gamma0.01.mat')
+data = loadmat('/home/pinn_clusters/truth_uh.mat') #replace with actual location of pinn_clusters folder
 x_star = np.transpose(data['x']) 
 u_star = np.transpose(data['u'])[:, 0]
 h_star = np.transpose(data['h'])[:, 0]

@@ -18,13 +18,15 @@ Jupyter notebook for consolidating error data from a set of trial result diction
 Jupyter notebook that loads the Numpy error array of a set of training trials and separates trials by $k$-means clustering in log-space. Code for vizualising clusters, plotting cluster statistics, etc.
 
 ## trial_results
-Numpy arrays of the $B_{err}$, $u_{err}$, $h_{err}$ for different experiments studied in the paper. Each numpy array has shape $(n, m, l)$, where $n$ is the number of values of $\gamma$ tested in the experiment, $m = 3$ is the number of predictive variables (i.e. $u$, $h$, $B$), and $l$ is equal to the number of repeated trials.    Naming conventions ar
+Numpy arrays of the $B_{err}$, $u_{err}$, $h_{err}$ for different experiments studied in the paper. Each numpy array has shape $(n, m, l)$, where $n$ is the number of values of $\gamma$ tested in the experiment, $m = 3$ is the number of predictive variables (i.e. $u$, $h$, $B$), and $l$ is equal to the number of repeated trials. In this repo, $l=501$ for all experiments. Please use the following code to load each array
 
 ```
 function test() {
   console.log("notice the blank line before this function?");
 }
 ```
+Naming conventions for each numpy array are as follows:
+
 ### anc_errs, anx_errs
 Error results using the standard settings. anc corresponds to clean data, anx corresponds to noise level = 0.x
 ### ux_errs

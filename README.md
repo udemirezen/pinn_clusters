@@ -9,7 +9,7 @@ Code for training PINNs.
 Required files with functions for training PINNs. "loss.py" and "loss_colo.py" define the loss functions used for testing. "loss.py" should be used for training with fixed collocation points, while "loss_colo.py" should be used for training using collocation resampling.
 
 ## constantB_uh.mat, sinusoidalB_uh.mat
-Ground truth profiles for u and h from which noisy data is generated. "constantB_uh.mat" are the u(x) and h(x) solutions for $B(x) = 1.0$, $x \in [0.0,1.0]$. "sinusoidalB_uh.mat" are the numerical u(x) and h(x) for $B(x) = \\frac{1}{2} \cos{(3\pi x)}$, $x \in [0.0,1.0]$. Both assume boundary conditions $u(0) = 1$, $h(0) = h_0$.
+Ground truth profiles for u and h from which noisy data is generated. "constantB_uh.mat" are the u(x) and h(x) solutions for $B(x) = 1.0$, $x \in [0.0,1.0]$. "sinusoidalB_uh.mat" are the numerical u(x) and h(x) for $B(x) = \\frac{1}{2} \cos{(3\pi x)}$, $x \in [0.0,1.0]$. Both assume boundary conditions $u(0) = 1$, $h(0) = h_0$. See p. 5 of the main text and pp.2-3 of the supplementary material for the definition and numerical value of the constant $h_0$.
 
 ## trial_processing.ipynb
 Jupyter notebook for consolidating error data from a set of trial result dictionaries into single Numpy array.

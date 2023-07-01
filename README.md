@@ -8,7 +8,7 @@ Code for training PINNs.
 ## formulations, optimization.py, loss.py, loss_colo.py, model.py
 Required files with functions for training PINNs. "loss.py" and "loss_colo.py" define the loss functions used for testing. "loss.py" should be used for training with fixed collocation points, while "loss_colo.py" should be used for training using collocation resampling.
 
-## truth_uh.mat 
+## constantB_uh.mat 
 Ground truth profiles for u and h from which noisy data is generated.
 
 ## trial_processing.ipynb

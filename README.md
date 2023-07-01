@@ -29,7 +29,7 @@ u_errs = errors[gi][0]
 h_errs = errors[gi][1]
 B_errs = errors[gi][2]
 ```
-where ```gi``` is the index of the $\gamma$-value being examined.
+where ```gi``` should be modified to the index of the $\gamma$-value being examined.
 
 Naming conventions for each numpy array are as follows:
 

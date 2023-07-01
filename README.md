@@ -33,8 +33,8 @@ where ```gi``` should be modified to the index of the $\gamma$-value being exami
 
 Naming conventions for each numpy array are as follows:
 
-### anc_errs, anx_errs
-Error results using the standard settings. anc corresponds to clean data, anx corresponds to noise level = 0.x
+### clean_u206l1kc_errs.npy, nx_u206l1kc_errs.npy
+Error results using the standard settings(six, 20-unit hidden layers with $c=1001$ fixed collocation points). The prefix "clean" corresponds to tests using clean training data; prefixes "nx" denote tests using noisy training data, with x specifying the level of noise (i.e. n3_u206l1kc_errs.npy corresponds to noise = 0.3; n05_u206l1kc_errs.npy corresponds to noise = 0.05)
 
 ### resampled_fixed.npy
 Results from training with collocation resampling followed by fixed collocation points for noise level $= 0.3$, (see Section 3.4 of the main text, pp. 14-15).

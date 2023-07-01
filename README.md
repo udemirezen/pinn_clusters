@@ -15,7 +15,7 @@ Ground truth profiles for $u(x)$ and $h(x)$ from which noisy data is generated. 
 Jupyter notebook for consolidating error data from a set of trial result dictionaries into single Numpy array.
 
 ## pinn_cluster_plots.ipynb
-Jupyter notebook that loads the Numpy error array of a set of training trials and separates trials by k-means clustering in log-space. Code for vizualising clusters, plotting cluster statistics, etc.
+Jupyter notebook that loads the Numpy error array of a set of training trials and separates trials by $k$-means clustering in log-space. Code for vizualising clusters, plotting cluster statistics, etc.
 
 ## trial_results
 Numpy arrays of the errors separated by noise level. Each noise level was tested for 13 gamma values.

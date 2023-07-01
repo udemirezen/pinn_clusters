@@ -41,4 +41,4 @@ Results from tests with increased neural network width. ux corresponds to x-unit
 Results from final test with two 100-hidden units and 1001 collocation points. (Noise level = 0.3)
 
 ### resampled_fixed.npy
-Results from training with collocation resampling followed by fixed collocation points for noise level $= 0.3$, (see Section 3.4 of the main text, pp. 14-15.) 
+Results from training with collocation resampling followed by fixed collocation points for noise level $= 0.3$, (see Section 3.4 of the main text, pp. 14-15.) We tested $l = 12$ values of $\gamma$ such that $\frac{\gamma}{1-\gamma}$ are logarithmically spaced between $[10^{-4}, 10^6]$

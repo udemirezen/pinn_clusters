@@ -22,7 +22,9 @@ Numpy arrays of the $B_{\mathrm{err}}$, $u_{\mathrm{err}}$, $h_{\mathrm{err}}$ f
 
 ```
 errors = np.load('path_to_file/errors.npy')
+
 gi = 1
+
 u_errs = errors[gi][0]
 h_errs = errors[gi][1]
 B_errs = errors[gi][2]

@@ -6,7 +6,7 @@ Physics-Informed Neural Networks" by Yunona Iwasaki and Ching-Yao Lai. Code for 
 
 # Table of Contents
 ## pinn_trial.py
-Main script for training PINNs to predict for the correct 1D $u(x)$ (velocity), $h(x)$ (thickness), and $B(x)$ (hardness) profiles given synthetic noisy data for $u(x)$ and $h(x)$. In addition to training PINNs, this script handles the generation of synthetic noisy training data at a specified noise level, as well as evaluating PINN predictive accuracy compared to ground truth profiles. This script requires the user to specify the ground truth $u(x)$ and $h(x)$ profiles with a Python dictionary saved as a ```.mat``` file using the ```data``` variable (line 35). Additionally, users m
+Main script for training PINNs to predict for the correct 1D $u(x)$ (velocity), $h(x)$ (thickness), and $B(x)$ (hardness) profiles given synthetic noisy data for $u(x)$ and $h(x)$. In addition to training PINNs, this script handles the generation of synthetic noisy training data at a specified noise level, as well as evaluating PINN predictive accuracy compared to ground truth profiles. This script requires the user to specify the ground truth $u(x)$, $h(x)$, and $B(x)$ profiles. Currently, $u(x)$ and $h(x)$ with a Python dictionary saved as a ```.mat``` file using the ```data``` variable (line 35). Additionally, users m
 
 ## formulations, optimization.py, loss.py, loss_colo.py, model.py
 Required files with functions for training PINNs. "loss.py" and "loss_colo.py" define the loss functions used for testing. "loss.py" should be used for training with fixed collocation points, while "loss_colo.py" should be used for training using collocation resampling.

@@ -6,7 +6,7 @@ Physics-Informed Neural Networks" by Yunona Iwasaki and Ching-Yao Lai. Code for 
 
 # Table of Contents
 ## pinn_trial.py
-Main script for training PINNs to predict for the correct $u(x)$ (velocity), $h(x)$ (thickness), and $B(x)$ (hardness) profiles given synthetic noisy data for $u(x)$ and $h(x)$. Given More details can be found in the comments of the paper. 
+Main script for training PINNs to predict for the correct $u(x)$ (velocity), $h(x)$ (thickness), and $B(x)$ (hardness) profiles given synthetic noisy data for $u(x)$ and $h(x)$. This script  
 
 ## formulations, optimization.py, loss.py, loss_colo.py, model.py
 Required files with functions for training PINNs. "loss.py" and "loss_colo.py" define the loss functions used for testing. "loss.py" should be used for training with fixed collocation points, while "loss_colo.py" should be used for training using collocation resampling.

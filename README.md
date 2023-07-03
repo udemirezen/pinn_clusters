@@ -25,7 +25,7 @@ Additionally, this script allows users to specify the following hyperparameters 
   
 _Note: there is no option to run L-BFGS with collocation resampling, as LBFGS is a second-order optimization algorithm (i.e. the update to the neural network weights is determined by the two preceding iterations); training will quickly terminate if this is attempted._
 
-* test_gammas _(list)_: specify one or multiple values of $\gamma$ to test. To conveniently implement logarithmic spacing of $\frac{\gamma}{1-\gamma}$, we first specify $\log_{10}(\frac{\gamma}{1-\gamma})$ using the ```logratios``` variable. 
+* test_gammas _(list)_: specify one or multiple values of $\gamma$ to test. Curently, to conveniently implement logarithmic spacing of $\frac{\gamma}{1-\gamma}$, we first specify $\log_{10}(\frac{\gamma}{1-\gamma})$ values using the ```logratios``` variable, then solve for the corresponding $\gamma$-values.
 
 Additional information can be found in the line-by-line explanations provided in the code comments.
 

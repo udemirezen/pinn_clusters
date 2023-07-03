@@ -21,9 +21,11 @@ Additionally, this script allows users to specify the following hyperparameters 
   * ```adam_fixed```: train with Adam optimizer wih fixed collocation points
   * ```lbfgs```: train with LBFGS optimizer with fixed collocation points.
 
-* test_noise: level of noise added to ground truth $u(x)$ and $h(x)$ profiles during synthetic data generation. Please refer to p. 6 of the main text for the definition of noise level; it may also be helpful to see its implementation in the script ```noise.py```. 
-Note: there is no option to run LBFGS with collocation resampling, as LBFGS is a second-order optimization algorithm (i.e. ); training will quickly terminate.
+* test_noise: level of noise added to ground truth $u(x)$ and $h(x)$ profiles during synthetic data generation. Please refer to p. 6 of the main text for the definition of noise level; it may also be helpful to see its implementation in the script ```noise.py```.
+  
+_Note: there is no option to run LBFGS with collocation resampling, as LBFGS is a second-order optimization algorithm (i.e. ); training will quickly terminate._
 
+* logratios: 
 
 Additional information can be found in the line-by-line explanations provided in the code comments.
 

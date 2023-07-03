@@ -12,7 +12,7 @@ This script requires the user to specify the ground truth $u(x)$, $h(x)$, and $B
 
 Additionally, this script allows users to specify the following parameters:
 
-* N_t ```int```: Number of collocation points.
+* N_t _(int)_: Number of collocation points.
 
 ```layers``` (```list```):
 

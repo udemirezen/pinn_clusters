@@ -12,9 +12,10 @@ This script requires the user to specify the ground truth $u(x)$, $h(x)$, and $B
 
 Additionally, this script allows users to specify the following parameters:
 
-* N_t _(int)_: Number of collocation points.
+* N_t _(int)_: Number of collocation points. This number stays fixed, even if the script switches between collocation resampling and fixed collocation points.
 
-```layers``` (```list```):
+* layers _(list)_: List specifying the width and depth of the neural network.
+* lyscl  _(list)_: 
 
 Additional information can be found in the line-by-line explanations provided in the code comments.
 

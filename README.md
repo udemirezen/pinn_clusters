@@ -23,7 +23,7 @@ Additionally, this script allows users to specify the following hyperparameters 
 
 * test_noise: level of noise added to ground truth $u(x)$ and $h(x)$ profiles during synthetic data generation. Please refer to p. 6 of the main text for the definition of noise level; it may also be helpful to see its implementation in the script ```noise.py```.
   
-_Note: there is no option to run LBFGS with collocation resampling, as LBFGS is a second-order optimization algorithm (i.e. ); training will quickly terminate._
+_Note: there is no option to run LBFGS with collocation resampling, as LBFGS is a second-order optimization algorithm (i.e. the update to the neural network weights depend on the two preceding iterations); training will quickly terminate if this is attempted.
 
 * logratios: 
 

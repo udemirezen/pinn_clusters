@@ -17,7 +17,11 @@ Additionally, this script allows users to specify the following hyperparameters 
 * layers _(list)_: List specifying the width and depth of the neural network. Specify the size of each layer except for the input layer. e.g. ```layers = [5,5,3]``` for a neural network with two, 5-unit hidden layers. The final value specifies the size of the output layer and must be set to 3 for this problem.
 
 * num_iterations_adam_resample, num_iterations_adam_fixed, num_iterations_lbfgs: Specify the number of iterations to train with each optimizer and collocation method.
-  * ```adam_resample```: train with ab
+  * ```adam_resample```: train with Adam optimizer using collocation resampling.
+  * ```adam_fixed```: train with Adam optimizer wih fixed collocation points
+  * ```lbfgs```: train with LBFGS optimizer with fixed collocation points.
+
+Note: there is no option to run LBFGS with collocation resampling, as LBFGS is a second-order optimization algorithm.
 
 
 Additional information can be found in the line-by-line explanations provided in the code comments.

@@ -94,5 +94,6 @@ where ```self.col_gen``` is defined in the ```__init__``` method:
 ```
         self.col_gen = tf.random.get_global_generator()
 ```
-Thus, the ```SquareLossRandom``` function generates a new set of collocation points every time it is called, i.e. at every iteration. __Important Note: It is critically important that a _stateful_ random number generator such as tf.random.Generator() in order to ensure that the collocation points 
+Thus, the ```SquareLossRandom``` function generates a new set of collocation points every time it is called, i.e. at every iteration. __Important Note: It is essential that a _stateful_ random number generator such as tf.random.Generator() in order to ensure that the collocation points. Using a stateless random generator (such as 
+ those ```numpy.random``` module or the ```lhs``` generator used for fixed collocation point generation)
 

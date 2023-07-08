@@ -61,7 +61,6 @@ class SquareLossRandom:
         collocation_pts = collocation_pts**3 
         
         x_eqn = tf.cast(collocation_pts, dtype=_data_type)
-        print(collocation_pts)
         equations = self.eqns(x=x_eqn, neural_net=net)
         x_data, y_data = data_pts
         datas = self.eqns_data(x=x_data, y=y_data, neural_net=net)

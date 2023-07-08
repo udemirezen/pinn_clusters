@@ -78,7 +78,7 @@ Results from final test with two 100-hidden units and 1001 collocation points. (
 
 Training can be switched between using fixed collocation points and collocation resampling by switching the loss function used during training. The loss function evaluated by a given optimizer is specified during the initialization of the optimizer. Use the  ```SquareLoss``` loss function when using fixed collocation points, and ```SquareLossRandom``` for random collocation resampling (see lines 77-100 in 'pinn_trials.py').
 
-Comparing the ```SquareLoss``` and ```SquareLossRandom``` functions in 'loss.py', the only difference between the two functions is in the ```__call__``` method. For ```SquareLossRandom```, we add a few extra lines at the beginning of the  ```__call__``` method:
+Comparing the ```SquareLoss``` and ```SquareLossRandom``` functions in 'loss.py', the only difference between the two functions is in the ```__call__``` method. For ```SquareLossRandom```, we add a few extra lines at the beginning of the  ```__call__``` method (lines 54-61):
 
 ```
 def __call__(self, x_eqn, data_pts, net) -> Dict[str, tf.Tensor]:
@@ -89,7 +89,7 @@ def __call__(self, x_eqn, data_pts, net) -> Dict[str, tf.Tensor]:
     collocation_pts = xmin + (xmax - xmin) * self.col_gen.uniform(shape = [N_t])
     collocation_pts = collocation_pts**3
 ```
-where ```self.col_gen``` is defined in the ```__init__``` method:
+where ```self.col_gen``` is a stateful random generator defined in the ```__init__``` method (line 52):
 
 ```
         self.col_gen = tf.random.get_global_generator()

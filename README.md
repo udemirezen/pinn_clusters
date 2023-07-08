@@ -81,6 +81,7 @@ Training can be switched between using fixed collocation points and collocation 
 Comparing the ```SquareLoss``` and ```SquareLossRandom``` functions in 'loss.py', the only difference between the two functions is in the ```__call__``` method. For ```SquareLossRandom```, we add a few extra lines at the beginning of the  ```__call__``` method:
 
 ```
+def __call__(self, x_eqn, data_pts, net) -> Dict[str, tf.Tensor]:
 xmin = 0.0
 xmax = 1.0
 N_t = 1001

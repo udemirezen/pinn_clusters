@@ -82,12 +82,18 @@ Comparing the ```SquareLoss``` and ```SquareLossRandom``` functions in 'loss.py'
 
 ```
 def __call__(self, x_eqn, data_pts, net) -> Dict[str, tf.Tensor]:
-xmin = 0.0
-xmax = 1.0
-N_t = 1001
-_data_type = tf.float64       
-collocation_pts = xmin + (xmax - xmin) * self.col_gen.uniform(shape = [N_t])
-collocation_pts = collocation_pts**3
+    xmin = 0.0
+    xmax = 1.0
+    N_t = 1001
+    _data_type = tf.float64       
+    collocation_pts = xmin + (xmax - xmin) * self.col_gen.uniform(shape = [N_t])
+    collocation_pts = collocation_pts**3
 ```
+where ```self.col_gen``` is defined in the ```__init__``` method:
+
+```
+        self.col_gen = tf.random.get_global_generator()
+```
+
 
 

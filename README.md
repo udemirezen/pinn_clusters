@@ -73,3 +73,6 @@ Results from tests with increased neural network width. ux corresponds to x-unit
 ### u100_c1k_errs.npy
 Results from final test with two 100-hidden units and 1001 collocation points. (Noise level = 0.3)
 
+# Implementation of Collocation Resampling
+
+

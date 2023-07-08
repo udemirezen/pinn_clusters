@@ -13,8 +13,8 @@ import os
 from data.noise import add_noise
 from data.sample import random_sample
 from model import create_mlp
-from loss import SquareLoss
-from loss_colo import SquareLossRandom
+from loss import SquareLoss, SquareLossRandom
+#from loss_colo import SquareLossRandom
 from optimization import LBFGS, Adam
 from formulations.constants import *
 from formulations.helpers import get_collocation_points, to_mat_tensor, to_tensor

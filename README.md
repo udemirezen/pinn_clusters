@@ -74,7 +74,7 @@ Results from tests with increased neural network width. ux corresponds to x-unit
 ### u100_c1k_errs.npy
 Results from final test with two 100-hidden units and 1001 collocation points. (Noise level = 0.3)
 
-# Note: Code Implementation of Collocation Resampling
+# Code Implementation of Collocation Resampling
 
 Training can be switched between using fixed collocation points and collocation resampling by switching the loss function used during training. The loss function evaluated by a given optimizer is specified during the initialization of the optimizer. Use the  ```SquareLoss``` loss function when using fixed collocation points, and ```SquareLossRandom``` for random collocation resampling (see lines 77-100 in 'pinn_trials.py').
 
@@ -94,6 +94,5 @@ where ```self.col_gen``` is defined in the ```__init__``` method:
 ```
         self.col_gen = tf.random.get_global_generator()
 ```
-
-
+Thus, the ```SquareLossRandom``` function generates a new set of collocation points every time it is called, i.e. at every iteration. __Important Note: It is critically important that a _stateful_ random number generator such as tf.random.Generator() in order to ensure that the collocation points 
 

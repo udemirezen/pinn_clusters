@@ -2,8 +2,7 @@ from typing import Dict
 import tensorflow as tf
 
 class SquareLoss:
-    """Calculate square loss from given physics-informed equations and data equations
-
+    """Calculate square loss from given physics-informed equations and data equations assuming fixed collocation points between iterations.
     Note that Data equation can be used to set boundary conditions too.
     """
 
@@ -33,9 +32,7 @@ class SquareLoss:
         return {"loss": loss, "loss_equation": loss_e, "loss_data": loss_d}
 
 class SquareLossRandom:
-    """Calculate square loss from given physics-informed equations and data equations
-
-    Note that Data equation can be used to set boundary conditions too.
+    """Calculate square loss from given physics-informed equations and data equations while resampling the collocation points after each iteration.
     """
 
     def __init__(self, equations, equations_data, gamma: float) -> None:

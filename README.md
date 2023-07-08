@@ -76,7 +76,7 @@ Results from final test with two 100-hidden units and 1001 collocation points. (
 
 # Note: Code Implementation of Collocation Resampling
 
-Training can be switched between the fixed collocation points and collocation resampling by switching the loss function used during training. The loss function evaluated by a given optimizer is specified at during the initialization of the optimizer. Use the  ```SquareLoss``` loss function when using fixed collocation points, and ```SquareLossRandom``` for random collocation resampling.
+Training can be switched between the fixed collocation points and collocation resampling by switching the loss function used during training. The loss function evaluated by a given optimizer is specified during the initialization of the optimizer. Use the  ```SquareLoss``` loss function when using fixed collocation points, and ```SquareLossRandom``` for random collocation resampling.
 
 
 

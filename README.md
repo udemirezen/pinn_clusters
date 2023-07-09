@@ -36,7 +36,9 @@ Contains the loss functions used in the paper, namely ```SquareLoss``` used for 
 
 Both functions evaluate the predictive accuracy of the neural network after each iteration according to the characteristic objective function of PINN, which we call $J(\Theta)$: ([Raissi et. al, 2019](https://doi.org/10.1016/j.jcp.2018.10.045))
 
-<p style="text-align: center;">$J(\Theta) = \gamma E(\Theta) + (1-\gamma)D(\Theta)$</p>
+<p align="center">
+$J(\Theta) = \gamma E(\Theta) + (1-\gamma)D(\Theta)$
+</p>
 
 ## formulations, optimization.py, model.py
 Required files with functions for training PINNs. Add more detail later.

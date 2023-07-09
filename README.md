@@ -30,9 +30,13 @@ _Note: there is no option to run L-BFGS with collocation resampling, as L-BFGS i
 
 Additional information can be found in the line-by-line explanations provided in the code comments.
 
+## loss.py
 
-## formulations, optimization.py, loss.py, loss_colo.py, model.py
-Required files with functions for training PINNs. "loss.py" and "loss_colo.py" define the loss functions used for testing. "loss.py" should be used for training with fixed collocation points, while "loss_colo.py" should be used for training using collocation resampling.
+
+
+
+## formulations, optimization.py, model.py
+Required files with functions for training PINNs. Add more detail later.
 
 loss.py and loss_colo.py differ by the following.
 

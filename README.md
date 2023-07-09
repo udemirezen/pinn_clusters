@@ -13,11 +13,11 @@ This script requires the user to specify the ground truth $u(x)$, $h(x)$, and $B
 
 Additionally, this script requires users to specify the following hyperparameters relevant to our optimization study:
 
-* N_t _(int)_: Number of collocation points. This number stays fixed, even if the script switches between collocation resampling and fixed collocation points (line 43)
+* N_t _(int)_: Number of collocation points. This number stays fixed, even if the script switches between collocation resampling and fixed collocation points (line 43).
 
 * layers _(list)_: List specifying the width and depth of the neural network. Specify the size of each layer except for the input layer. e.g. ```layers = [5,5,3]``` for a neural network with two, 5-unit hidden layers. The final value specifies the size of the output layer and must be set to 3 for this problem. (line 47)
 
-* num_iterations_adam_resample, num_iterations_adam_fixed, num_iterations_lbfgs _(int)_: Specify the number of iterations to train with each optimizer and collocation method. (lines 53-55)
+* num_iterations_adam_resample, num_iterations_adam_fixed, num_iterations_lbfgs _(int)_: Specify the number of iterations to train with each optimizer and collocation method (lines 53-55).
   * ```adam_resample```: train with Adam optimizer using collocation resampling.
   * ```adam_fixed```: train with Adam optimizer wih fixed collocation points
   * ```lbfgs```: train with L-BFGS optimizer with fixed collocation points.

@@ -32,7 +32,7 @@ Additional information can be found in the line-by-line explanations provided in
 
 ## loss.py
 
-Contains the loss functions used in the paper, namely ```SquareLoss``` and ```SquareLossRandom```. 
+Contains the loss functions used in the paper, namely ```SquareLoss``` used for fixed collocation points, and ```SquareLossRandom``` used for collocation resampling.
 
 
 

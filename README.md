@@ -32,7 +32,9 @@ Additional information can be found in the line-by-line explanations provided in
 
 ## loss.py
 
-Contains the loss functions used in the paper, namely ```SquareLoss``` used for fixed collocation points, and ```SquareLossRandom``` used for collocation resampling.
+Contains the loss functions used in the paper, namely ```SquareLoss``` used for fixed collocation points, and ```SquareLossRandom``` used for collocation resampling. Please refer to the final section of this README (__"Code Implementation of Collocation Resampling"__) for a detailed description of how these two functions differ.
+
+
 
 
 

@@ -46,8 +46,10 @@ Both ```SquareLoss``` and ```SquareLossRandom``` take the same arguments at init
 ### Initialization
 An instance of the ```SquareLoss``` function can be created by the following code
 ```
-loss = SquareLoss(equations=equations, equations_data=Data_Equations, gamma=gamma) #Initialize loss function for fixed collocation training
+loss = SquareLoss(equations=equations, equations_data=Data_Equations, gamma=gamma)
 ```
+where
+* equations: An iterable of callables with the signature ```function(x, neuralnet)``` corresponding to the governing physics equations. To enforce 1D SSA, we pass ```Inverse_1stOrder_Equations``` imported from ```formulations/eqns_o1_inverse.py```
 
 
 ## constantB_uh.mat, sinusoidalB_uh.mat

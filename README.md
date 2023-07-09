@@ -32,6 +32,8 @@ Additional information can be found in the line-by-line explanations provided in
 
 ## loss.py
 
+Contains the loss functions used in the paper, namely ```SquareLoss``` and ```SquareLossRandom```. 
+
 
 
 

@@ -42,11 +42,13 @@ $J(\Theta) = \gamma E(\Theta) + (1-\gamma)D(\Theta)$
 
 where we introduce an additional hyperparameter $\gamma \in [0.0, 1.0]$ to adjust the relative weighting between the equation loss $E(\Theta)$ and the data loss $D(\Theta)$. $D(\Theta)$ is evaluated at values in the domain where training data is available, while $E(\Theta)$ is evaluated at a set of collocation points sampled _independently_ of the available training data. Please see p. 3 of the main text for the precise definitions of equation and data loss used in our paper; p. 5 of the main text for the governing physics equations enforced by $E(\Theta)$, and ```formulations/eqns_o1_inverse.py``` for the implementation of these equations in our codes.
 
-To 
-## formulations, optimization.py, model.py
-Required files with functions for training PINNs. Add more detail later.
+Both ```SquareLoss``` and ```SquareLossRandom``` take the same arguments at initialization and calling. 
+### Initialization
+An instance of the ```SquareLoss``` function can be created by the following code
+```
+loss = SquareLoss(equations=equations, equations_data=Data_Equations, gamma=gamma) #Initialize loss function for fixed collocation training
+```
 
-loss.py and loss_colo.py differ by the following.
 
 ## constantB_uh.mat, sinusoidalB_uh.mat
 Ground truth profiles for $u(x)$ and $h(x)$ from which noisy data is generated. "constantB_uh.mat" are the $u(x)$ and $h(x)$ solutions for $B(x) = 1.0$, $x \in [0.0,1.0]$. "sinusoidalB_uh.mat" are the numerical $u(x)$ and $h(x)$ for $B(x) = \\frac{1}{2} \cos{(3\pi x)}$, $x \in [0.0,1.0]$. Both assume boundary conditions $u(0) = 1$, $h(0) = h_0$. See p. 5 of the main text and pp. 2-3 of the supplementary material for the definition and numerical value of $h_0$ and other relevant constants. 

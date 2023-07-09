@@ -24,7 +24,7 @@ Additionally, this script allows users to specify the following hyperparameters 
 
 * test_noise _(float)_: level of noise added to ground truth $u(x)$ and $h(x)$ profiles during synthetic data generation. Please refer to p. 6 of the main text for the definition of noise level; it may also be helpful to see its implementation in the script ```noise.py```.
   
-_Note: there is no option to run L-BFGS with collocation resampling, as LBFGS is a second-order optimization algorithm (i.e. the update to the neural network weights is determined by the two preceding iterations); training will quickly terminate if this is attempted._
+_Note: there is no option to run L-BFGS with collocation resampling, as L-BFGS is a second-order optimization algorithm (i.e. the update to the neural network weights is determined by the two preceding iterations); training will quickly terminate if this is attempted._
 
 * test_gammas _(list)_: specify one or multiple values of $\gamma$ to test. Curently, to conveniently implement logarithmic spacing of $\frac{\gamma}{1-\gamma}$, we first specify $\log_{10}(\frac{\gamma}{1-\gamma})$ values using the ```logratios``` variable, then solve for the corresponding $\gamma$-values (lines 221-222).
 

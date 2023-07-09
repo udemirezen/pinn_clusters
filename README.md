@@ -2,7 +2,7 @@
 Accompanying code and results for paper: "1D Ice Shelf Hardness Inversion: Clustering Behavior and Collocation Resampling in
 Physics-Informed Neural Networks" by Yunona Iwasaki and Ching-Yao Lai. Code for training PINNs for 1D ice-shelf inverse modeling and analysis of training results over repeated trials.
 
-Please direct questions about this code to Yuno Iwasaki.
+Please direct questions about this code to Yuno Iwasaki ().
 # Installation
 
 # Table of Contents
@@ -34,7 +34,7 @@ Additional information can be found in the line-by-line explanations provided in
 
 Contains the loss functions used in the paper, namely ```SquareLoss``` used for fixed collocation points, and ```SquareLossRandom``` used for collocation resampling. Please refer to the final section of this README (__"Code Implementation of Collocation Resampling"__) for a detailed description of how these two functions differ.
 
-Both functions evaluate the predictive accuracy of the neural network after each iteration according to the characteristic objective function of PINN ([Raissi et. al, 2019](https://doi.org/10.1016/j.jcp.2018.10.045))
+Both functions evaluate the predictive accuracy of the neural network after each iteration according to the characteristic objective function of PINN, which we call $J(\Theta)$: ([Raissi et. al, 2019](https://doi.org/10.1016/j.jcp.2018.10.045))
 
 ## formulations, optimization.py, model.py
 Required files with functions for training PINNs. Add more detail later.

@@ -40,7 +40,7 @@ Both loss functions evaluate the predictive accuracy of the neural network after
 $J(\Theta) = \gamma E(\Theta) + (1-\gamma)D(\Theta)$
 </p>
 
-where we introduce an additional hyperparameter $\gamma \in [0.0, 1.0]$ to adjust the relative weighting between the equation loss $E(\Theta)$ and the data loss $D(\Theta)$.
+where we introduce an additional hyperparameter $\gamma \in [0.0, 1.0]$ to adjust the relative weighting between the equation loss $E(\Theta)$ and the data loss $D(\Theta)$. , while $E(\Theta)$ is evaluated at a set of collocation points sampled _independently_ of the available training data.
 ## formulations, optimization.py, model.py
 Required files with functions for training PINNs. Add more detail later.
 

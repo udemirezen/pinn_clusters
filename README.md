@@ -7,7 +7,7 @@ Please direct questions about this code to Yuno Iwasaki.
 
 # Table of Contents
 ## pinn_trial.py
-Main script for training PINNs to predict for the correct 1D $u(x)$ (velocity), $h(x)$ (thickness), and $B(x)$ (hardness) profiles given synthetic noisy data for $u(x)$ and $h(x)$. In addition to training PINNs, this script handles the generation of synthetic noisy training data at a specified noise level, as well as evaluation of PINN predictive accuracy compared to ground truth profiles. 
+Main script for training PINNs to predict for the correct 1D $u(x)$ (velocity), $h(x)$ (thickness), and $B(x)$ (hardness) profiles given synthetic noisy data for $u(x)$ and $h(x)$. In addition to training PINNs, this script handles generation of synthetic noisy training data at a specified noise level, as well as evaluation of PINN predictive accuracy compared to ground truth profiles. 
 
 This script requires the user to specify the ground truth $u(x)$, $h(x)$, and $B(x)$ profiles. Currently, $u(x)$ and $h(x)$ profiles are specified by providing a reference to a Python dictionary saved as a ```.mat``` file using the ```N_t``` variable (line 35). The ground truth $B(x)$ profile is specified by passing an array of values to the ```B_truth``` variable  (line 39). ```B_truth``` should contain the ground truth values of $B(x)$ at the same values of $x$ as the ground truth $u(x)$ and $h(x)$ profiles.
 

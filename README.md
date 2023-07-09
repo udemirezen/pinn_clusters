@@ -41,6 +41,8 @@ $J(\Theta) = \gamma E(\Theta) + (1-\gamma)D(\Theta)$
 </p>
 
 where we introduce an additional hyperparameter $\gamma \in [0.0, 1.0]$ to adjust the relative weighting between the equation loss $E(\Theta)$ and the data loss $D(\Theta)$. $D(\Theta)$ is evaluated at values in the domain where training data is available, while $E(\Theta)$ is evaluated at a set of collocation points sampled _independently_ of the available training data. Please see p. 3 of the main text for the precise definitions of equation and data loss used in our paper; p. 5 of the main text for the governing physics equations enforced by $E(\Theta)$, and ```formulations/eqns_o1_inverse.py``` for the implementation of these equations in our codes.
+
+To 
 ## formulations, optimization.py, model.py
 Required files with functions for training PINNs. Add more detail later.
 

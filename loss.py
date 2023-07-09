@@ -10,9 +10,9 @@ class SquareLoss:
         """
         Args:
             equations:
-                an iterable of callables, with signatrue function(x, neural_net)
+                an iterable of callables, with signatute function(x, neural_net)
             equations_data:
-                an iterable of callables, with signatrue function(x, y, neural_net)
+                an iterable of callables, with signatute function(x, y, neural_net)
             gamma:
                 the normalized weighting factor for equation loss and data loss,
                 loss = gamma * equation-loss + (1 - gamma) * data-loss

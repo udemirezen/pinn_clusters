@@ -2,7 +2,7 @@
 Accompanying code and results for the paper: "1D Ice Shelf Hardness Inversion: Clustering Behavior and Collocation Resampling in
 Physics-Informed Neural Networks" [link to paper] by Yunona Iwasaki and Ching-Yao Lai. Here we for training PINNs for 1D ice-shelf inverse modeling, as well as scripts to facilitate analysis of training results over repeated trials.
 
-![MarineGEO circle logo](/assets/img/MarineGEO_logo.png "MarineGEO logo")
+![Highlight clustering for default training scheme](https://github.com/YaoGroup/pinn_clusters/blob/main/clusterplot_forgithub.png)
 
 
 

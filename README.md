@@ -15,6 +15,8 @@ Indeed, we observed that the _attainable_ predictive accuracy of PINNs improves 
 Figure 1. The clustering behaviour of  PINN predictions. Correlation of $B_{err}$ with $u_{err}$ and $h_{err}$ over 501 trials for various values of $\frac{\gamma}{1-\gamma}$ and noise level = 0.3, using six, 20-unit hidden layers and $c=1001$ collocation points. PINNs were trained for 400,000 iterations of Adam and 200,000 iterations of LBFGS, or until convergence. (a),(b): $u_{err}$ and $h_{err}$ vs. $B_{err}$, respectively.
 </p>
 
+Given this problematic behavior, we conclude that setting $\frac{\gamma}{1-\gamma} > 1$ is not a viable method for improving prediction accuracy. Thus, we tested an alternative approach to improving PINN performance accuracy which we call _collocation resampling_, in which the collocation points used to evalute the equation loss are resampled after every training iteration. Using this approach, we showed that 
+
 ![Highlight clustering for random collocation resampling](https://github.com/YaoGroup/pinn_clusters/blob/main/collocation_resampling_highlight.png)
 
 Please direct questions about this code to Yunona Iwasaki: yiwasaki [at] berkeley [dot] edu .

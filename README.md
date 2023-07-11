@@ -16,11 +16,12 @@ Indeed, we observed that the _attainable_ predictive accuracy of PINNs improves 
 Figure 1. The clustering behaviour of  PINN predictions. Correlation of $B_{err}$ with $u_{err}$ and $h_{err}$ over 501 trials for various values of $\frac{\gamma}{1-\gamma}$ and noise level = 0.3, using six, 20-unit hidden layers and $c=1001$ collocation points. PINNs were trained for 400,000 iterations of Adam and 200,000 iterations of LBFGS, or until convergence. (a),(b): $u_{err}$ and $h_{err}$ vs. $B_{err}$, respectively.
 </p>
 
-Given this problematic behavior, we conclude that setting $\frac{\gamma}{1-\gamma} > 1$ is not a viable method for improving prediction accuracy. Thus, we tested an alternative approach to improving PINN performance accuracy which we call _collocation resampling_, in which the collocation points used to evalute the equation loss are resampled after every training iteration. We observe that using this approach, clustering is again exhibited for values of $\frac{\gamma}{1-\gamma} \gtrapprox 1$. However, we discover that for $\frac{\gamma}{1-\gamma} \lessapprox 1$, we observe a 2-3 orders of magnitude decrease in predictive errors compared to training with fixed collocation points. 
+Given this problematic behavior, we conclude that setting $\frac{\gamma}{1-\gamma} > 1$ is not a viable method for improving prediction accuracy. Thus, we tested an alternative approach to improving PINN performance accuracy which we call _collocation resampling_, in which the collocation points used to evalute the equation loss are resampled after every training iteration. We observe that using this approach, clustering is again exhibited for values of $\frac{\gamma}{1-\gamma} \gtrapprox 1$. However, we discover that for $\frac{\gamma}{1-\gamma} \lessapprox 1$, we observe a 2-3 orders of magnitude decrease in predictive errors compared to training with fixed collocation points, with no clustering.
 
 ![Highlight clustering for random collocation resampling](https://github.com/YaoGroup/pinn_clusters/blob/main/collocation_resampling_highlight.png)
-
-
+<p align="center">
+Distribution of $B_{err}$, $u_{err}$, and $h_{err}$ using collocation resampling for constant $B(x)$ profile over 501 trials with noise = 0.3. We compare the trial error distributions for values of  $\frac{\gamma}{1-\gamma} < 1$. \textit{No clustering is observed for these values of $\gamma$ using initial training with collocation resampling.} In grey, we overlay the prediction errors from all PINN solutions obtained with $\frac{\gamma}{1-\gamma} < 1$ using the original training scheme (4 $\gamma$-values * 501 trials  = 2005 samples).
+</p>
 
 
 # Installation

@@ -11,7 +11,7 @@ Indeed, we observed that the _attainable_ predictive accuracy of PINNs improves 
 
 ![Highlight clustering for default training scheme](https://github.com/YaoGroup/pinn_clusters/blob/main/clusterplot_forgithub.png)
 
-<p align="center", em>
+<p align="center">
 Figure 1. The clustering behaviour of  PINN predictions. Correlation of $B_{err}$ with $u_{err}$ and $h_{err}$ over 501 trials for various values of $\frac{\gamma}{1-\gamma}$ and noise level = 0.3, using six, 20-unit hidden layers and $c=1001$ collocation points. PINNs were trained for 400,000 iterations of Adam and 200,000 iterations of LBFGS, or until convergence. (a),(b): $u_{err}$ and $h_{err}$ vs. $B_{err}$, respectively.
 </p>
 

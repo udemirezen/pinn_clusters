@@ -3,7 +3,7 @@ Accompanying code and results for the paper: "1D Ice Shelf Hardness Inversion: C
 Physics-Informed Neural Networks" [link to paper] by Yunona Iwasaki and Ching-Yao Lai. We document the codes used to train PINNs for 1D ice-shelf inverse modeling. Additionally,  we provide scripts to facilitate analysis of training results over repeated trials.
 
 ## Overview
-In our study, we investigated the feasbility of a physics-informed neural network to invert for the correct ice-shelf hardness spatial profile $B(x)$ given sparse, noisy training data of only velocity $u(x)$ and thickness $h(x)$. We found that for training data with realistic levels of noise, physics-informed neural networks perform poorly for 
+In our study, we investigated the feasbility of a physics-informed neural network to invert for the correct ice-shelf hardness spatial profile $B(x)$ given sparse, noisy training data of only velocity $u(x)$ and thickness $h(x)$. We found that for training data with realistic levels of noise, physics-informed neural networks perform poorly over a wide range of hyperparameters.
 
 Thus, we introduced a weighting hyperparameter $\gamma$ in the objective function of the PINN, adjusting the relative weighting between equation and data loss.   
 ![Highlight clustering for default training scheme](https://github.com/YaoGroup/pinn_clusters/blob/main/clusterplot_forgithub.png)

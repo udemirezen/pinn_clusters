@@ -5,7 +5,7 @@ Physics-Informed Neural Networks" [link to paper] by Yunona Iwasaki and Ching-Ya
 ## Overview
 In our study, we investigated the feasbility of a physics-informed neural network to invert for the correct ice-shelf hardness spatial profile $B(x)$ given sparse, noisy training data of only velocity $u(x)$  and thickness $h(x)$. We introduced a weighting hyperparameter $\gamma$ in the objective function of the PINN, adjusting the relative weighting between equation and data loss.  
 ![Highlight clustering for default training scheme](https://github.com/YaoGroup/pinn_clusters/blob/main/clusterplot_forgithub.png)
-*Figure 1. The clustering behaviour of  PINN predictions. Correlation of $B_{err}$ with $u_{err}$ and $h_{err}$ over 501 trials for various values of $\frac{\gamma}{1-\gamma}$ and noise level = 0.3, using six, 20-unit hidden layers and $c=1001$ collocation points. PINNs were trained for 400,000 iterations of Adam and 200,000 iterations of LBFGS, or until convergence. (a),(b): $u_{err}$ and $h_{err}$ vs. $B_{err}$, respectively.*
+*Figure 1. The clustering behaviour of  PINN predictions. Correlation of $B_{err}$ with $u_{err}$ and $h_{err}$ over 501 trials for various values of $$\frac{\gamma}{1-\gamma}$$ and noise level = 0.3, using six, 20-unit hidden layers and $c=1001$ collocation points. PINNs were trained for 400,000 iterations of Adam and 200,000 iterations of LBFGS, or until convergence. (a),(b): $u_{err}$ and $h_{err}$ vs. $B_{err}$, respectively.*
 Meanwhile,
 ![Highlight clustering for random collocation resampling](https://github.com/YaoGroup/pinn_clusters/blob/main/collocation_resampling_highlight.png)
 

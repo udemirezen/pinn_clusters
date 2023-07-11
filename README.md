@@ -6,7 +6,7 @@ Physics-Informed Neural Networks" [link to paper] by Yunona Iwasaki and Ching-Ya
 
 
 
-Please direct questions about this code to Yunona Iwasaki: yiwasaki [at] berkeley [dot] edu
+Please direct questions about this code to Yunona Iwasaki: yiwasaki [at] berkeley [dot] edu .
 
 
 # Installation

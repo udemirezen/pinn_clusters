@@ -6,6 +6,9 @@ Physics-Informed Neural Networks" [link to paper] by Yunona Iwasaki and Ching-Ya
 In our study, we investigated the feasbility of a physics-informed neural network to invert for the correct ice-shelf hardness spatial profile $B(x)$ given sparse, noisy training data of only velocity $u(x)$ and thickness $h(x)$. We found that for training data with realistic levels of noise, PINNs perform poorly over a broad range of PINN hyperparameters; 
 
 Thus, we introduced a weighting hyperparameter $\gamma$ in the objective function of the PINN, adjusting the relative weighting between equation and data loss. $\frac{\gamma}{1-\gamma} = 1$ corresponds to the original formulation in which the equation and data losses are weighted equally.  When $\frac{\gamma}{1-\gamma} > 1$, the equation loss is weighted more heavily than the data loss, and vice versa for  $\frac{\gamma}{1-\gamma} < 1$. We predicted that by weighting the equation loss heavier than the data loss by setting $\frac{\gamma}{1-\gamma} > 1$, PINNs would be better able to denoise the training data and attain higher predictive accuracies.
+
+Indeed, we observed that the _attainable_ predictive accuracy of PINNs improves significantly for higher values of $\gamma$. __However, we also discover a problematic __. We call this the __clustering behavior__ (see Figure 1)
+
 ![Highlight clustering for default training scheme](https://github.com/YaoGroup/pinn_clusters/blob/main/clusterplot_forgithub.png)
 *Figure 1. The clustering behaviour of  PINN predictions. Correlation of $B_{err}$ with $u_{err}$ and $h_{err}$ over 501 trials for various values of $$\frac{\gamma}{1-\gamma}$$ and noise level = 0.3, using six, 20-unit hidden layers and $c=1001$ collocation points. PINNs were trained for 400,000 iterations of Adam and 200,000 iterations of LBFGS, or until convergence. (a),(b): $u_{err}$ and $h_{err}$ vs. $B_{err}$, respectively.*
 

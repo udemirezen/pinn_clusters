@@ -4,7 +4,7 @@ Physics-Informed Neural Networks" [link to paper] by Yunona Iwasaki and Ching-Ya
 
 ![Highlight clustering for default training scheme](https://github.com/YaoGroup/pinn_clusters/blob/main/clusterplot_forgithub.png)
 
-![Highlight clustering for random collocation resampling](https://github.com/YaoGroup/pinn_clusters/blob/main/clusterplot_forgithub.png)
+![Highlight clustering for random collocation resampling](https://github.com/YaoGroup/pinn_clusters/blob/main/collocation_resampling_highlight.png)
 
 Please direct questions about this code to Yunona Iwasaki: yiwasaki [at] berkeley [dot] edu .
 

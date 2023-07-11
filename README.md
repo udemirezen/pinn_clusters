@@ -10,8 +10,10 @@ Thus, we introduced a weighting hyperparameter $\gamma$ in the objective functio
 Indeed, we observed that the _attainable_ predictive accuracy of PINNs improves significantly for higher values of $\gamma$. __However, we also discover that for $\frac{\gamma}{1-\gamma} \gtrapprox 1$, PINN predictive performance is highly unreliable.__ The prediction errors are distributed bimodally, with one cluster corresponding to accurate, "low-error" solutions, and the other consisting of "high-error" solutions that fit poorly to the ground truth datasets. We call this phenomenon the _clustering behavior_ (see Figure 1). This behavior persisted over an extensive range of hyperparameters (see paper).
 
 ![Highlight clustering for default training scheme](https://github.com/YaoGroup/pinn_clusters/blob/main/clusterplot_forgithub.png)
-*Figure 1. The clustering behaviour of  PINN predictions. Correlation of $B_{err}$ with $u_{err}$ and $h_{err}$ over 501 trials for various values of $$\frac{\gamma}{1-\gamma}$$ and noise level = 0.3, using six, 20-unit hidden layers and $c=1001$ collocation points. PINNs were trained for 400,000 iterations of Adam and 200,000 iterations of LBFGS, or until convergence. (a),(b): $u_{err}$ and $h_{err}$ vs. $B_{err}$, respectively.*
 
+<p align="center">
+_Figure 1. The clustering behaviour of  PINN predictions. Correlation of $B_{err}$ with $u_{err}$ and $h_{err}$ over 501 trials for various values of $$\frac{\gamma}{1-\gamma}$$ and noise level = 0.3, using six, 20-unit hidden layers and $c=1001$ collocation points. PINNs were trained for 400,000 iterations of Adam and 200,000 iterations of LBFGS, or until convergence. (a),(b): $u_{err}$ and $h_{err}$ vs. $B_{err}$, respectively._
+</p>
 
 ![Highlight clustering for random collocation resampling](https://github.com/YaoGroup/pinn_clusters/blob/main/collocation_resampling_highlight.png)
 

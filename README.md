@@ -20,7 +20,7 @@ Given this problematic behavior, we conclude that setting $\frac{\gamma}{1-\gamm
 
 ![Highlight clustering for random collocation resampling](https://github.com/YaoGroup/pinn_clusters/blob/main/collocation_resampling_highlight.png)
 <p align="center">
-Figure 2. Distribution of $B_{err}$, $u_{err}$, and $h_{err}$ using collocation resampling for constant $B(x)$ profile over 501 trials with noise = 0.3. We compare the trial error distributions for values of  $\frac{\gamma}{1-\gamma} < 1$. \textit{No clustering is observed for these values of $\gamma$ using initial training with collocation resampling.} In grey, we overlay the prediction errors from all PINN solutions obtained with $\frac{\gamma}{1-\gamma} < 1$ using the original training scheme (4 $\gamma$-values * 501 trials  = 2005 samples).
+Figure 2. Distribution of $B_{err}$, $u_{err}$, and $h_{err}$ using collocation resampling for constant $B(x)$ profile over 501 trials with noise = 0.3. We compare the trial error distributions for values of  $\frac{\gamma}{1-\gamma} < 1.$ \textit{No clustering is observed for these values of $\gamma$ using initial training with collocation resampling.} In grey, we overlay the prediction errors from all PINN solutions obtained with $\frac{\gamma}{1-\gamma} < 1$ using the original training scheme (4 $\gamma$-values * 501 trials  = 2005 samples).
 </p>
 
 

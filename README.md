@@ -144,3 +144,7 @@ Thus, the ```SquareLossRandom``` function generates a new set of collocation poi
 __Important Note: It is essential to use a _stateful_ random number generator such as ```tf.random.Generator()``` to ensure that the collocation points are resampled after each iteration.__ Using a stateless random generator (such as 
  those provided in the ```numpy.random``` module, or the ```lhs``` generator used in our codes for fixed collocation point generation) will not allow the collocation points to be updated in a TensorFlow training loop, causing the loss function to behave identically to training with fixed collocation points.
 
+# Citation
+
+BibTeX citation to be added after publication.
+

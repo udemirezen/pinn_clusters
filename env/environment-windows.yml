@@ -1,0 +1,16 @@
+name: pinn_env
+channels:
+    - defaults
+    - conda-forge
+dependencies:
+    - python=3.8.10
+    - defaults::tensorflow-gpu=2.5.0
+    - defaults::scipy=1.6.2
+    - defaults::ipykernel=5.3.4
+    - defaults::matplotlib=3.4.2
+    - jupyter=1.0.0
+    - pip
+    - pip:
+      - pydoe==0.3.8
+      - tensorflow-probability==0.12.2
+      - tensorflow-gpu==2.4.1

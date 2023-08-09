@@ -35,7 +35,9 @@ Then, create a conda environment by running the command
 Replace ```environment.yml``` with the environment file appropriate for your platform:
 
    **environment-cluster.yml**:          For running using Tensorflow 2.4 on an HPC cluster (CPU only)
+   
    **environment-osx.yml**:              For running on Mac OS using Tensorflow 2.4
+   
    **environment-windows.yml**:          For running on Windows using Tensorflow 2.5 (Tensorflow 2.4 is unsupported on Windows)
 
 # Table of Contents

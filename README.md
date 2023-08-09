@@ -28,17 +28,17 @@ Figure 2. Distribution of $B_{err}$, $u_{err}$, and $h_{err}$ using collocation 
 
 Our script should be run in a conda environment using one of the ```.yml``` files in the ```env``` folder. To install conda, please follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
-Then, create a conda environment using terminal or similar:
+Then, create a conda environment by running the command
 
 ```conda env create -f environment.yml```
 
 Replace ```environment.yml``` with the environment file appropriate for your platform:
 
-environment.yml: For running using Tensorflow 2.4 on an HPC cluster (CPU only)
+environment-cluster.yml:          For running using Tensorflow 2.4 on an HPC cluster (CPU only)
 
-environment-osx.yml:          For running on Mac OS using Tensorflow 2.4
+environment-osx.yml:              For running on Mac OS using Tensorflow 2.4
 
-environment-win.yml:          For running on Windows using Tensorflow 2.5 (Tensorflow 2.4 is unsupported on Windows)
+environment-windows.yml:          For running on Windows using Tensorflow 2.5 (Tensorflow 2.4 is unsupported on Windows)
 
 # Table of Contents
 ## pinn_trial.py

@@ -26,7 +26,9 @@ Figure 2. Distribution of $B_{err}$, $u_{err}$, and $h_{err}$ using collocation 
 
 # Installation
 
-Create a conda environment using terminal or similar:
+Our script should be run in a conda environment using one of the ```.yml``` files in the ```env``` folder. To install conda, please follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
+
+Then, create a conda environment using terminal or similar:
 
 ```conda env create -f environment.yml```
 

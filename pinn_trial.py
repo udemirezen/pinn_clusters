@@ -32,7 +32,7 @@ from formulations.eqns_o1_inverse import Data_Equations, Inverse_1stOrder_Equati
 
 """Define the domain of the problem"""
 #Import ground truth data for u,h and their x-positions (x) from which to build synthetic noisy training data
-data = loadmat('/home/pinn_clusters/constantB_uh.mat') #file path to ground truth u(x), h(x) profiles. To test sinusoidal B(x) studied in our paper, replace with location of "sinusoidalB_uh.mat".
+data = loadmat('constantB_uh.mat') #file path to ground truth u(x), h(x) profiles. To test sinusoidal B(x) studied in our paper, replace with location of "sinusoidalB_uh.mat".
 x_star = np.transpose(data['x']) 
 u_star = np.transpose(data['u'])[:, 0]
 h_star = np.transpose(data['h'])[:, 0]

@@ -88,6 +88,8 @@ where
 ```SquareLossRandom``` is initialized with the same arguments.
 ## formulations
 
+## data
+
 ## optimization.py
 
 ## model.py

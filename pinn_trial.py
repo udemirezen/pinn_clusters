@@ -21,8 +21,8 @@ from formulations.helpers import get_collocation_points, to_mat_tensor, to_tenso
 from formulations.helpers import _data_type
 
 """Indexing for parallelizing multiple trials at fixed noise + one or multiple gamma values using SLURM. Comment out if running an individual trial without SLURM."""
-idx = int(os.environ["SLURM_ARRAY_TASK_ID"])
-expnum = str(idx) #experiment number label for result files
+#idx = int(os.environ["SLURM_ARRAY_TASK_ID"])
+#expnum = str(idx) #experiment number label for result files
 
 """Add location of ground truth data to sys.path"""
 sys.path.append("/home/yiwasaki/IceShelf1D")

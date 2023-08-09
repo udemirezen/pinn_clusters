@@ -32,7 +32,7 @@ Create a conda environment using terminal or similar:
 
 Replace ```environment.yml``` with the environment file appropriate for your platform:
 
-environment-cluster-tf24.yml: For running using Tensorflow 2.4 on Della-gpu\\
+environment-cluster-tf24.yml: For running using Tensorflow 2.4 on Della-gpu
 
 environment-osx.yml:          For running on Mac OS using Tensorflow 2.4
 

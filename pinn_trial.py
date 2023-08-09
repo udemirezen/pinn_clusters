@@ -50,7 +50,7 @@ lyscl = [1, 1, 1, 1, 1, 1] #Standard deviation to set the scales for Xavier weig
 # Hyper parameters for the PINN
 fractional = False
 
-num_iterations_adam_resample = 4000   #Number of iterations of Adam using collocation resampling
+num_iterations_adam_resampled = 4000   #Number of iterations of Adam using collocation resampling
 num_iterations_adam_fixed = 2000      #Number of iterations of Adam with fixed collocation points
 num_iterations_lbfgs = 2000           #umber of iterations of LBFGS using fixed collocation points
 

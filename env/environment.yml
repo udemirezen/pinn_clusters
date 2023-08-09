@@ -11,3 +11,6 @@ dependencies:
     - tensorflow-probability=0.12.2
     - pydoe=0.3.8
     - jupyter=1.0.0
+    - pip
+    - pip:
+        - tensorflow-gpu==2.4.1

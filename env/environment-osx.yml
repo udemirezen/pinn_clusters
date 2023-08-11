@@ -1,4 +1,4 @@
-name: tf24
+name: pinn_env_os
 channels:
     - defaults
     - conda-forge

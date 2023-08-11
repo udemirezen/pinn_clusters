@@ -98,8 +98,10 @@ where
 Includes helper functions relevant for synthetic training data generation.
 
 ## optimization.py
+Implements Adam and L-BFGS optimizers.
 
 ## model.py
+Helper functions for neural network initialization.
 
 
 ## constantB_uh.mat, sinusoidalB_uh.mat

@@ -95,6 +95,7 @@ where
 
 
 ## data
+Includes helper functions relevant for synthetic training data generation.
 
 ## optimization.py
 

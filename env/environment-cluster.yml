@@ -1,4 +1,4 @@
-name: tensorflow-2.4
+name: pinn_env_cluster
 channels:
     - defaults
     - conda-forge

@@ -172,15 +172,9 @@ __Important Note: It is essential to use a _stateful_ random number generator su
 
 # Citation
 Yunona Iwasaki and Ching-Yao Lai.
-*One-dimensional ice shelf hardness inversion: Clustering behavior and collocation resampling in physics-informed neural networks.*
-Journal of Computational Physics,
-Volume 492,
-2023,
-112435,
-ISSN 0021-9991,
-https://doi.org/10.1016/j.jcp.2023.112435.
+*One-dimensional ice shelf hardness inversion: Clustering behavior and collocation resampling in physics-informed neural networks.* Journal of Computational Physics, Volume 492, 2023, 112435, ISSN 0021-9991, https://doi.org/10.1016/j.jcp.2023.112435.
 
-**BibTex Citation:**
+**BibTex:**
 ```
 @article{IWASAKI2023112435,
           title = {One-dimensional ice shelf hardness inversion: Clustering behavior and collocation resampling in physics-            informed neural networks},

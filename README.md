@@ -1,6 +1,6 @@
 # pinn_clusters
-Accompanying code and results for the paper: "1D Ice Shelf Hardness Inversion: Clustering Behavior and Collocation Resampling in
-Physics-Informed Neural Networks" [link to paper] by Yunona Iwasaki and Ching-Yao Lai. We document the codes used to train PINNs for 1D ice-shelf inverse modeling. Additionally,  we provide scripts to facilitate analysis of training results over repeated trials.
+Accompanying code and results for the paper: "[1D Ice Shelf Hardness Inversion: Clustering Behavior and Collocation Resampling in
+Physics-Informed Neural Networks](https://doi.org/10.1016/j.jcp.2023.112435)"  by Yunona Iwasaki and Ching-Yao Lai. We document the codes used to train PINNs for 1D ice-shelf inverse modeling. Additionally,  we provide scripts to facilitate analysis of training results over repeated trials.
 
 Please direct questions about this code and documentation to Yunona Iwasaki: yiwasaki@berkeley.edu .
 ## Overview

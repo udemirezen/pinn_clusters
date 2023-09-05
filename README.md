@@ -171,6 +171,7 @@ __Important Note: It is essential to use a _stateful_ random number generator su
  those provided in the ```numpy.random``` module, or the ```lhs``` generator used in our codes for fixed collocation point generation) will not allow the collocation points to be updated in a TensorFlow training loop, causing the loss function to behave identically to training with fixed collocation points.
 
 # Citation
+```
 @article{IWASAKI2023112435,
 title = {One-dimensional ice shelf hardness inversion: Clustering behavior and collocation resampling in physics-informed neural networks},
 journal = {Journal of Computational Physics},
@@ -183,4 +184,5 @@ url = {https://www.sciencedirect.com/science/article/pii/S0021999123005302},
 author = {Yunona Iwasaki and Ching-Yao Lai},
 keywords = {Physics-informed neural networks, Scientific machine learning, Ice dynamics, Geophysical fluid dynamics, Nonlinear dynamics, Inverse problems},
 }
+```
 

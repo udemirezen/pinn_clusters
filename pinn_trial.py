@@ -226,6 +226,6 @@ results = gamma_batch(test_gammas, test_noise, x_star, u_star, h_star, layers) #
 result_dict    = format_dict(results)
 
 from scipy.io import savemat
-file_str = "r" + expnum #label results by the experiment trial number. Comment out "expnum" if running a single trial without SLURM.
+file_str = "r" #+ expnum #label results by the experiment trial number. Comment out "expnum" if running a single trial without SLURM.
 savemat('/home/pinntrial_results/' + file_str + '.mat', result_dict) #save trial results to folder **MODIFY TO DESIRED RESULTS DIRECTORY**
 
